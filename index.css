@@ -93,8 +93,6 @@ main {
     height: auto;
 }
 
-
-
 .onlywhite {
     color: #fff;
 }
@@ -140,12 +138,6 @@ main {
     }
 }
 
-
-
-
-
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -163,7 +155,6 @@ body {
     border-radius: 20px;
 }
 
-
 .image-container1 {
     display: flex;
     justify-content: center;
@@ -178,7 +169,6 @@ body {
     border-radius: 20px;
 }
 
-
 .swiper {
     width: 100%;
     height: 300px;
@@ -190,10 +180,6 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
-
-
-
-
 
 .full-width-bg {
     width: 100vw;
@@ -214,11 +200,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-
-
-
-
 
 .card-container {
     background-color: #fff !important;
@@ -250,16 +231,6 @@ h5 {
 .btn-outline-dark:hover {
     background-color: #444;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Основной стиль для карточек товара */
 .card-container {
@@ -356,7 +327,6 @@ h5 {
     padding: 10px;
 }
 
-
 /* Адаптивность */
 @media (max-width: 768px) {
     .modal-body {
@@ -372,8 +342,6 @@ h5 {
         text-align: center;
     }
 }
-
-
 
 /* map style */
 .map-responsive {
@@ -403,9 +371,6 @@ h5 {
         padding-bottom: 100%;
     }
 }
-
-
-
 
 /* БУРГЕР-МЕНЮ */
 .burger-checkbox {
@@ -503,4 +468,102 @@ h5 {
     border-radius: 5px;
     transition: background-color 0.3s;
     white-space: nowrap;
+}
+
+/* Контейнер для аккордов */
+.accords-container {
+    width: 100%;
+    max-width: 350px;
+    /* Ограничиваем максимальную ширину */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-left: auto;
+    /* Центрируем по горизонтали */
+    margin-right: auto;
+    /* Центрируем по горизонтали */
+}
+
+/* Заголовок аккордов */
+.accord-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Одиночный аккорд */
+.accord-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Центрируем текст */
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Стили для самого контейнера аккордов */
+.accords-container {
+    font-family: Arial, sans-serif;
+    max-width: 350px;
+    /* Ограничиваем максимальную ширину */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для заголовка аккордов */
+.accords-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Стили для аккордов */
+.accord {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f5f5f5;
+    /* Легкий фон для каждого аккорда */
+}
+
+/* Контейнер для изображения qr */
+#qrContainer {
+    display: none;
+    /* Скрываем контейнер по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#qrContainer img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
